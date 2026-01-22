@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--/ /---- Put your name in the title of the page ----/ /-->
+	<title>Prajanth Portfolio</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<!-- Add a link to google fonts here if you want them -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
+	<meta description="Prajanth's portfolio of product builds, dashboards, and experiments.">
+
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	
+    <!-- ------------------------------------------------------
+    The site is designed to be mobile first. The wrapper elements
+	are in place for when you get to desktop size to contain the 
+	content.
+    ------------------------------------------------------- -->
+    
+	<header class="primary">
+        <div class="wrapper">
+            
+			<div class="logo-container">
+				<h1>Prajanth<br>Portfolio</h1>
+
+				<!-- ------------------------------------------------------
+				Note that the image of the logo is linked to the home page.
+				------------------------------------------------------- -->
+				<a href="index.html"><img src="https://dummyimage.com/175/c4c4c4/fff&text=logo" alt="logo image" id="logo"></a>
+			</div>
+            
+            
+			<!-- ------------------------------------------------------
+            The navigation here is linking to the sections further down
+            the page.
+            ------------------------------------------------------- -->
+			<nav id="mainnav">
+            	<ul>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    
+    <!-- ------------------------------------------------------
+    This is the work section, which has two parts: the featured
+	section and the projects section.
+    ------------------------------------------------------- -->
+    
+	    <section id="work">
+	   	<div class="wrapper">
+	    	<h2>Check Out My Best Projects</h2>
+        	<section class="featured">
+                <article>
+                	<!-- ------------------------------------------------------
+                    Link the image below to the detail page for this project.
+                    Use the page.html file to make that page. Also link the 
+                    anchor tag in the paragraph below to the same page.
+                    ------------------------------------------------------- -->
+	                <a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="Aurora Logistics Hub preview"></a>
+                </article>
+                
+                <article>
+	                <h3>Aurora Logistics Hub</h3>
+	                <h4>Challenge Statement</h4>
+	                <p>Streamlined inbound freight scheduling for a regional carrier with slot conflicts and last-mile delays. Built a dispatch dashboard, automated slot bidding, and shipped a live ETA API that reduced phone calls by 40%.</p> <p><a href="#">Find out how I solved this problem</a></p> 
+                </article>
+            </section> <!-- end row -->
+            
+            
+            <!-- ------------------------------------------------------
+            The projects section is for additional projects. I put four in
+			here, but it could be more, or less. You just have to pay
+			attention to how they wrap, and how many you want per row.
+            
+            Note that each image should be linked to the page with more
+            detailed information about that project. You can use a copy of
+            page.html to create those pages.
+            ------------------------------------------------------- -->
+            
+            <section class="projects">
+            
+            	<article>
+	                <h3>Nebula Notes</h3>
+	                <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Nebula Notes screenshot"></a>
+	                <p><strong>Role:</strong> Full-stack developer</p>
+	                <p><strong>Description:</strong> Offline-first note app with Markdown sync and AI summaries for field teams.</p>
+                </article>
+                
+                <article>
+	                <h3>Harbor CRM</h3>
+	                <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Harbor CRM screenshot"></a>
+	                <p><strong>Role:</strong> Product engineer</p>
+	                <p><strong>Description:</strong> Lightweight CRM for small exporters with customs docs automation and email parsing.</p>
+                </article>
+                
+                <article>
+	                <h3>Velvet Cart</h3>
+	                <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Velvet Cart screenshot"></a>
+	                <p><strong>Role:</strong> Frontend lead</p>
+	                <p><strong>Description:</strong> Headless commerce storefront with animated bundles and real-time inventory badges.</p>
+                </article>
+				
+				<article>
+	                <h3>Atlas Analytics</h3>
+	                <a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="Atlas Analytics screenshot"></a>
+	                <p><strong>Role:</strong> Data engineer</p>
+	                <p><strong>Description:</strong> Geospatial KPI dashboards with anomaly alerts for multi-site facilities.</p>
+                </article>
+            
+            </section><!-- end row -->
+            
+        </div> <!-- end work wrapper -->
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    This is the about and contact section. The links in the main
+    navigation link to this section. 
+    ------------------------------------------------------- -->
+    
+    <section id="about-contact" class="secondary">
+   		<div class="wrapper">
+        	
+			<div class="profile-photo">
+            	<img src="http://placehold.it/260?text=Your+Photo" alt="image">
+            </div>
+			
+            <article>
+				<h2>About Me</h2>
+					<p>Hi, I am Prajanth—builder of simple tools that make teams faster. I enjoy pairing with designers, shipping experiments, and measuring what actually moves the needle.</p>
+					<h3>Skills</h3>
+					<p>JavaScript/TypeScript, Python, React, Flask APIs, Supabase, and data viz. Currently exploring edge deployments and offline-first patterns.</p>
+			</article> 
+                
+			<article>
+				<h2>Contact Me!</h2>
+					<p>I am open to collaborating on fast-moving product teams and interesting contract builds. Reach out by phone, email, or your favorite network.</p>
+
+				<!-- ------------------------------------------------------
+				Be sure to encode your email address at this site, so you 
+				don't get spam. http://wbwip.com/wbw/emailencoder.html
+				------------------------------------------------------- -->
+
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:prajanth@email.com">prajanth@email.com</a><br>
+				<i class="fa fa-phone" aria-hidden="true"></i> 555-123-9876</p>
+
+				<!-- ------------------------------------------------------
+				You can see here that I have included font-awesome. It is used
+				to create the icons above and below. You can go to the font-awesome
+				website to see the available icons and swap some out.
+				------------------------------------------------------- -->
+
+				<p class="social">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a> 
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+				</p>
+			</article>
+                   
+        </div>
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    The footer section is not doing much on this page. Add more
+    content if necessary.
+    ------------------------------------------------------- -->
+	<footer class="primary">
+	    <div class="wrapper">
+	    	<p class="centered">&copy; 2026 all rights reserved</p>
+		</div>
+	</footer>
+
+</body>
+</html>
